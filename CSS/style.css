@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(css/fontello.css);
 @import url("https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -28,8 +29,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     box-sizing: border-box;
     line-height: 1.15;
-    /* background: silver; */
-    /* padding-left:200px; */
+    background: silver;
 }
 ol, ul {
 	list-style: none;
@@ -49,95 +49,142 @@ table {
 *,*::before, *::after{
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color:black;
+}
 
 .clearmargin{
-    min-width: 1120px;
-    margin:auto;
-    /* background: pink; */
+    width:1120px;
+    margin:0 auto;
+    background: coral;
+    position:relative;
 }
-/* .clearfix::before{
-    content:"";
-    clear: both;
-    display:block;
-}    */
-.logo{
-    position: absolute;
-    width: 70px;
-    height: 25px;
-    top:30px;
-}
+/*헤더 부분*/
 .header{
-    display: flex;
-}
-.main_menu{
-    display:flex;
-    /* justify-content: flex-start; */
-    /* position: absolute; */
-    /* position:relative; */
-    left:270px;
-    padding-left:100px;
-}
-a{
-    color:black;
-    text-decoration: none;
-
-}
-
-.main_menu a:hover{
-    color: green;
-}
-
-.header{
-    background:rgba(255, 255, 255, 0.9);
-    position:fixed;
-    height: 90px;
-    width:100vw;
-       
-}
-.header::after{
-    content:"";
-    display:block;
-}
-.menu_list:hover::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 90px;
-    width: 100%;
-    height: 100px;
-    left: 0;
-    background-color: rgba(245,245,245,0.7) ;
-  }
-
-.menu_item{
-    font-size:17px;
-    padding:0 50px;
+    background: pink;
     position: relative;
-    text-align: center;
+    height: 90px;
+    /* display:flex; */
+    /* vertical-align: middle; */
+    /* line-height: 90px; */
+    /* padding:35px 0; */
 }
-.menu_item_1{
-    margin-left:75px;
+.header h1{
+    display:inline-block;
 }
-.menu_item_sub {
-    display: none;
 
-}
-.menu_item_sub li{
-    margin-left:20px;
-}
-.menu_list:hover .menu_item_sub {
-    min-height: 90px;
-    /* background: orange; */
+.logo{
+    height: 25px;
+    width: auto;
     position: absolute;
-    display:flex;
-    margin-top:35px;
-    width:100vw;
-    padding-top:20px; 
+    top:35px;
+    left:30px
+}
+/*언어 선택*/
+.language_select_section{
+    background: teal;
+    position: absolute;
+    right:0;
+    top:30px;
+    border-radius:20px;
+}
+.language_button{
+    background: #fff;
+    border-radius: 20px;
+    border:1px solid transparent;
+    width:130px;
+    height: 35px;
+}
+.language_select{
+    background:red;
+    display:none;
+    line-height: 1.5rem;
+    border-radius: 20px;
+    padding:10px;
+    position: absolute;
+    top:0;
+    width: 130px;
+}
+.language_select_section .language_select_active{
+    display:block;
+}
+.site_map{
+    background: cyan;
+    position: absolute;
+    top:35px;
+    right:200px;
     
 }
-.menu_list{
-    padding:35px 0;
+/*메인 메뉴*/
+.main_menu{
+    display:flex;
+    position: absolute;
+    top:0;
+    right:500px;    
 }
+.menu_item{
+   
+   font-size:18px
+}
+.menu_list{
+    padding:35px 30px;
+}
+.navigation{
+    background: yellow;
+    
+}
+.menu_item_sub {
+    background:rgba(245,245,245,0.8);
+    position: absolute;
+    top:90px;
+    left:-410px;;
+    padding:20px 0;
+    display:flex;
+    justify-content: center;
+    white-space: nowrap;
+    width:100vw;
+    
+}
+
+.menu_item_sub li{
+    line-height: 30px;
+}
+/* .menu_list::before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 90px;
+    width: 200vw;
+    left:0;
+    min-height: 100px;
+    left: -100vw;
+    background-color: rgba(245,245,245,0.7) ;
+  } */
+  /* .menu_list_sub_active{
+      display:flex;
+  } */
+  .menu_item_sub::after{
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 200vw;
+    left:0;
+    min-height: 100px;
+    left: -100vw;
+    background-color: rgba(245,245,245,0.7);
+  }
+  .header_active::before{
+      display:block;
+  }
+  .menu_item_sub li{
+      padding:0 20px;
+  }
+
+
+
+
 
 
 .readable_hidden{
@@ -153,14 +200,15 @@ main{
     /* background: yellow;     */
     width:100vw;
     display:flex;
-    margin: 20px 0;
+    
 }
-.image-test{
+/* .image-test{
     width:100vw;
     padding-top: 90px;
-    /* background: greenyellow; */
+    background: greenyellow;
     height:710px;
     display:block;
+    background: green;
 }
 .news_list{
     display:flex;
@@ -219,4 +267,4 @@ main{
     line-height: 23px;
     margin-top:10px;
     color:#adadad;
-}
+} */
