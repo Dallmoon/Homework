@@ -85,6 +85,9 @@ a{
     /* line-height: 90px; */
     /* padding:35px 0; */
 }
+.main_menu a:hover{
+    color:green;
+}
 .sub_menu_bg{
     background: rgba(245,245,245,0.8);
     display:none;
