@@ -9,8 +9,8 @@
     <script src="./JS/main.js" defer></script>
 </head>
 <body>
-<div class="clearmargin">
     <header class="header">
+        <div class="headerMenu">
         <h1><a href="#"><img class="logo" src="./image/logo_png/LINE@_typeA.png" alt="네이버 메신저 라인 코퍼레이션 로고" title="네이버 라인"></a></h1>
         <section class="language_select_section">
             <h2 class="language_select_head readable_hidden">언어 선택 리스트</h2>
@@ -26,10 +26,11 @@
         </section>
         <nav class="navigation">
             <h2 class="readable_hidden">메인메뉴</h2>
-            <div class="site_map"><a href="#">SITEMAP</a></div>
+            <span class="site_map"><a href="#">SITEMAP</a></span>
                 <ul class="main_menu">
                     <li class="menu_list menu_1">
                         <a href="#"><span class="menu_item menu_item_1 down-open">회사소개</span></a>
+                        <div class="sub_bg">
                         <ul class="menu_item_sub menu_item_1_sub">
                             <li><a href="#">회사소개</a></li>
                             <li><a href="#">Line's Mission</a>
@@ -43,6 +44,7 @@
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">Line 로고 사용 가이드</a></li>
                         </ul>
+                        </div>
                     </li>
                     <li class="menu_list menu_2">
                         <a href="#"><span class="menu_item menu_item_2">사업</span></a>
@@ -70,16 +72,18 @@
                     </li>
                 </ul>
             </nav>
-            
+        </div>
     </header>
-   
-    
-    <!-- <main class="main">
+       
+      
+    <main class="main">
         <section class="line_promotion">
-            <h2 class="line_promotion_text readable_hidden"><a href="#">Line's Mission</a></h2>
-                <iframe id="mvclip" class="mvclip" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Line promotion video" width="1530" height="620" src="https://www.youtube.com/embed/JPpiKm8dKR8?&autoplay=1&amp;loop=1&playlist=JPpiKm8dKR8&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;widgetid=1"></iframe>
+            <h2 class="line_promotion_text readable_hidden">Line's Mission</h2>
+                <iframe id="mvclip" class="mvclip" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" title="Line promotion video" src="https://www.youtube.com/embed/JPpiKm8dKR8?&autoplay=1&amp;loop=1&playlist=JPpiKm8dKR8&amp;controls=0&amp;showinfo=0&amp;modestbranding=1&amp;wmode=transparent&amp;enablejsapi=1&amp;widgetid=1"></iframe>
                 <span class="line_promotion_text_detail">CLOSING THE DISTANCE</span>
+                <button class="line_promotion_button icon-right-open">LINE's Mission</button>
         </section>
+        <div class="clearmargin">
         <section class="news_section">
             <h2 class="news_section_title">
                 News Room
@@ -198,7 +202,9 @@
                     </li>
             </ul>    
         </section>
+        </div>
     </main>
+    <div class="clearmargin">
     <footer class="footer">
         <div class="footer_bg"></div>
         <section class="info">
@@ -279,10 +285,12 @@
                     </li>
                 </ul>
         </section>
-    </footer>  -->
+    </footer> 
+    </div>
     
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
-</div>
+
+
+
 </body>
 </html>
 
