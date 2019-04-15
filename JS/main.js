@@ -1,4 +1,4 @@
-var icon_down_open = $('.icon-down-open')
+var icon_down_open = $('.language_button')
 
 
 /*메인 nav 오픈 */
@@ -78,5 +78,20 @@ $('.language_select li').on('click' ,function(){
 $('.language_select li:last-child').on('focusout' ,function(){
     $('.language_select').removeClass("language_select_active")    
 });
+
+$('.open_family_site_list').on('click focusin',function(){
+    $('.family_site_list').removeClass("family_site_list_active")
+    $('.family_site_list').addClass('family_site_list_active')
+});
+$('.family_site_list li').on('click' ,function(){
+    $('.family_site_list').removeClass("family_site_list_active")    
+});
+
+
+$('.family_site_list li:last-child').on('focusout' ,function(){
+    $('.family_site_list').removeClass("family_site_list_active")    
+});
+
+
 
 
